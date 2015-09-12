@@ -3,6 +3,7 @@ Basic Binary Tree Library
 """
 import random
 
+# Node class for tree node
 class node:
 
     def __init__(self):
@@ -10,12 +11,13 @@ class node:
         self.left=None
         self.right=None
 
+# Binary Tree class
 class BinaryTree:
 
     def __init__(self):
         self.root=None
 
-    #inserts data randomly by deciding whether to go left or  right at each point
+    # inserts data randomly by deciding whether to go left or  right at each point
     def insert(self,data):
         if self.root==None:
             self.root=node()
