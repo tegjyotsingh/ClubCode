@@ -73,6 +73,7 @@ class BinaryTree:
         if current_root!=None:
             count=self.count_nodes(current_root.left,count)+1+self.count_nodes(current_root.right,count)
         return count
+
     def create_from_traversal(self,inorder,start,end,preorder,index):
         #take first preorder element make node
         if start>end:
@@ -152,6 +153,7 @@ def Test():
     b2.traverse(b2.root,"inorder")
     b2.traverse(b2.root,"preorder")
     b2.traverse(b2.root,"postorder")
+
 if __name__=="__main__":
     #Test()
     Test_print()
